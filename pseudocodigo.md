@@ -1,6 +1,6 @@
-=========================================================
+
 1. Funciones de entrada
-=========================================================
+
 
 LeerFloat(mensaje)
     Repetir:
@@ -23,9 +23,9 @@ LeerIntRango(mensaje, min, max)
     Retornar n
 
 
-=========================================================
+
 2. Lectura de la carga
-=========================================================
+
 
 PedirCarga()
     Repetir:
@@ -48,9 +48,8 @@ PedirCarga()
     Retornar (R, C, modo)
 
 
-=========================================================
 3. Lectura de la señal
-=========================================================
+
 
 PedirSeñal()
     DC ← LeerFloat
@@ -87,9 +86,7 @@ PedirSeñal()
     Retornar datos
 
 
-=========================================================
 4. Modelo del amplificador H_amp(ω)
-=========================================================
 
 H_amp(ω)
     j ← imaginario
@@ -109,9 +106,9 @@ H_amp(ω)
     Retornar num/den
 
 
-=========================================================
+
 5. Salida de cada componente
-=========================================================
+
 
 SalidaArmonica(ω, A_rms, fase, R, C, modo)
     V_F = A_rms e^(j fase)
@@ -137,9 +134,8 @@ SalidaArmonica(ω, A_rms, fase, R, C, modo)
     Retornar (V_out, I)
 
 
-=========================================================
 6. Cálculo VRMS, IRMS, potencia y THD
-=========================================================
+
 
 CalcularRespuesta(...)
     Procesar fundamental y armónicas
@@ -163,9 +159,8 @@ CalcularRespuesta(...)
     retornar valores
 
 
-=========================================================
 7. Reconstrucción temporal
-=========================================================
+
 
 GenerarSeñalTiempo(DC, componentes)
     t ← vector de tiempo
@@ -178,9 +173,9 @@ GenerarSeñalTiempo(DC, componentes)
     retornar (t, vout)
 
 
-=========================================================
+
 8. Programa principal
-=========================================================
+
 
 main()
     Leer carga
