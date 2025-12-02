@@ -90,12 +90,6 @@ PySide6 (para la GUI)
 
 📦 Instalación
 
-Clonar el repositorio:
-
-git clone https://github.com/tu_usuario/tu_repo.git
-cd tu_repo
-
-
 Instalar dependencias:
 
 pip install numpy matplotlib PySide6
