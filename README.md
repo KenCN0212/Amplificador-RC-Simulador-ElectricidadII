@@ -1,42 +1,106 @@
-# Simulador de Amplificador con Carga R–C  
-Proyecto – Electricidad II  
-Instituto Tecnológico de Costa Rica  
+🔧 Simulador de Amplificador con Carga R–C
 
----
+Proyecto – Electricidad II
+Instituto Tecnológico de Costa Rica
 
-## 📘 Descripción del proyecto
+📘 Descripción del proyecto
 
-Este repositorio contiene el simulador completo del amplificador analizado en el curso **Electricidad II**, basado en un modelo por regiones de frecuencia.  
+Este repositorio contiene un simulador completo de un amplificador con carga R–C, desarrollado para el curso Electricidad II.
+El sistema implementa un modelo por regiones de frecuencia, reconstrucción de señales periódicas y una interfaz gráfica moderna en PySide6.
 
-El programa:
+El programa permite:
 
-- Modela el amplificador mediante tres funciones de transferencia según la frecuencia.  
-- Recibe una señal de entrada formada por componente DC, fundamental y hasta 10 armónicas.  
-- Calcula VRMS, IRMS, potencia real y THD.  
-- Reconstruye la señal temporal de salida.  
-- Permite seleccionar distintos modos de carga:  
-  - RC en serie  
-  - Solo R  
-  - Salida en corto  
-  - Salida en abierto  
+✔ Modelado del amplificador
 
-El código está diseñado para ser fácilmente adaptable a cualquier otro lenguaje de programación.
+Función de transferencia H(ω) definida por regiones de operación.
 
----
+Implementación matemática basada en análisis nodal simplificado.
 
-## 🎯 Objetivo
+Validación conceptual frente a simulación LTSpice.
 
-Simular la respuesta del amplificador para cualquier señal periódica, validando su comportamiento mediante las funciones de transferencia obtenidas por análisis nodal simplificado y comparadas con LTSpice.
+✔ Configuración de la señal de entrada
 
----
+Componente DC, frecuencia fundamental y hasta 10 armónicas configurables.
 
-## 🧰 Requisitos
+Reconstrucción de la señal en el dominio del tiempo.
 
-- Python 3.8+
-- Numpy
-- Matplotlib
+Cálculo automático de magnitudes eléctricas.
 
-Instalación:
+✔ Modos de carga seleccionables
 
-```bash
-pip install numpy matplotlib
+RC en serie
+
+Solo resistencia
+
+Salida en corto
+
+Salida en abierto
+
+✔ Cálculos eléctricos automáticos
+
+VRMS total
+
+IRMS total
+
+Potencia real entregada a la carga
+
+THD (Total Harmonic Distortion)
+
+Señal de salida reconstruida
+
+✔ Interfaz gráfica (GUI)
+
+Desarrollada con PySide6, incluye:
+
+Tema oscuro y diseño moderno
+
+Panel de configuración de la señal
+
+Panel de selección de carga
+
+Tarjetas desplegables para armónicas
+
+Gráfico interactivo en tiempo con Matplotlib
+
+Organización clara para uso académico
+
+🎯 Objetivo del proyecto
+
+Simular de forma precisa la respuesta de un amplificador sometido a una señal periódica arbitraria, permitiendo estudiar efectos como:
+
+Atenuación y fase según frecuencia
+
+Distorsión introducida por la carga
+
+Variaciones de potencia y corriente
+
+Comparación entre diferentes modos de carga
+
+Todo esto usando un modelo matemático que puede ser portado fácilmente a otros lenguajes (C, MATLAB, Verilog-A, etc.).
+
+🧰 Requisitos del sistema
+
+Python 3.8+
+
+Numpy
+
+Matplotlib
+
+PySide6 (para la GUI)
+
+📦 Instalación
+
+Clonar el repositorio:
+
+git clone https://github.com/tu_usuario/tu_repo.git
+cd tu_repo
+
+
+Instalar dependencias:
+
+pip install numpy matplotlib PySide6
+
+
+Ejecutar el simulador:
+
+python main.py
